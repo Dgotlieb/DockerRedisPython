@@ -1,8 +1,4 @@
-from seleniumTest.HomeScreen import HomeScreen
-from seleniumTest.InitializeDriver import InitializeDriver
 import os
-from selenium import webdriver
-from selenium import webdriver
 
 #  A.Redis app
 
