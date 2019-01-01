@@ -5,8 +5,8 @@ from selenium import webdriver
 #set driver for test
 #dirname = os.path.dirname(__file__)
 #filename = os.path.join(dirname, 'chromedriver')
-driver = webdriver.Chrome(executable_path='usr/bin/chromedriver')
-print('usr/bin/chromedriver')
+print('/home/gilad/Document/Test/chromedriver')
+driver = webdriver.Chrome(executable_path='/home/gilad/Document/Test/chromedriver')
 driver.implicitly_wait(10)
 
 #open browser with url of redis app
