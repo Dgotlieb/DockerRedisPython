@@ -1,7 +1,7 @@
 import os
 
 from selenium import webdriver
-from selenium.webdriver import FirefoxOptions
+
 
 driver = webdriver.Firefox(executable_path='/home/gilad/Documents/Test/geckodriver')
 driver.implicitly_wait(10)
