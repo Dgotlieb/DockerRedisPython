@@ -1,11 +1,11 @@
 import os
 
 from selenium import webdriver
+from selenium.webdriver import FirefoxOptions
 
-#set driver for test
-#dirname = os.path.dirname(__file__)
-#filename = os.path.join(dirname, 'chromedriver')
-print('/home/gilad/Document/Test/chromedriver')
+opts = FirefoxOptions()
+opts.add_argument("--headless")
+driver = webdriver.Firefox(firefox_options=opts)
 driver = webdriver.Firefox(executable_path='/home/gilad/Documents/Test/geckodriver')
 driver.implicitly_wait(10)
 
