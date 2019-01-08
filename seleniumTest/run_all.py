@@ -1,11 +1,14 @@
 import os
 
 from selenium import webdriver
+from selenium.webdriver import FirefoxOptions
 
 
-driver = webdriver.Firefox(executable_path='/home/gilad/Documents/Test/geckodriver')
-driver.implicitly_wait(10)
-
+opt =FirefoxOption()
+opts.add_argument("--headless")
+# driver = webdriver.Firefox(executable_path='/home/gilad/Documents/Test/geckodriver')
+#driver.implicitly_wait(10)
+driver = webdriver.Firefox(fire_fox_option=opts)
 #open browser with url of redis app
 driver.get("http://localhost:5000/")
 driver.maximize_window()
