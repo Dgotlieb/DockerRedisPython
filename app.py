@@ -1,5 +1,4 @@
 import time
-
 import redis
 from flask import Flask
 
